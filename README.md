@@ -12,7 +12,7 @@ Port server bisa diganti di dalam file `app.js`
 
 ## Server Routing
 | Page | Route | Default Route |
-|~~|~~|~~|
+|--|--|--|
 | Homepage | `/` | http://localhost:8000/ |
 | Add Car | `/create` | http://localhost:8000/create |
 | Edit Car | `/edit/:id` | http://localhost:8000/edit/:id |
