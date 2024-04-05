@@ -31,7 +31,7 @@ const createCar = async (req, res) => {
   try {
     await Cars.create(req.body);
     req.flash("message", "Ditambah");
-    res.redirect("/cars");
+    res.redirect("/");
   } catch (err) {
     console.log(err.message);
   }
@@ -59,7 +59,7 @@ const editCar = async (req, res) => {
       },
     });
     req.flash("message", "Diedit");
-    res.redirect("/cars");
+    res.redirect("/");
   } catch (err) {
     res.render("error.ejs", {
       message: err.message,
@@ -75,7 +75,7 @@ const deleteCar = async (req, res) => {
       },
     });
 
-    res.redirect("/cars");
+    res.redirect("/");
   } catch (err) {
     res.render("error.ejs", {
       message: err.message,
