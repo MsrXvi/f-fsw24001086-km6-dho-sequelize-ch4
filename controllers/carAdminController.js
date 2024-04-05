@@ -74,7 +74,7 @@ const deleteCar = async (req, res) => {
         id: req.params.id,
       },
     });
-
+    req.flash("message", "Dihapus");
     res.redirect("/");
   } catch (err) {
     res.render("error.ejs", {
